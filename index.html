@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Karayel Tasarım Hava Durumu API</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Antalya&APPID=06473cc2227f6a1bba91eb63689989ab&units=metric", function (jsonAntalya) {
+                console.log(JSON.stringify(jsonAntalya));
+                $("#il").text("İl: " + jsonAntalya.name);
+                $("#derece").text("Hava Sıcaklığı: " + jsonAntalya.main.temp + "°C");
+                $("#durum").text("Hava Durumu: " + jsonAntalya.weather[0].main);
+                $("#ikon").append("<img src='iconset/dark/" + jsonAntalya.weather[0].icon + ".png' />");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="il"></p>
+    <p id="derece"></p>
+    <p id="durum"></p>
+    <p id="ikon"></p>
+</body>
+</html>
