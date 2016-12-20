@@ -10,7 +10,7 @@
                 $("#il").text("İl: " + jsonAntalya.name);
                 $("#derece").text("Hava Sıcaklığı: " + jsonAntalya.main.temp + "°C");
                 $("#durum").text("Hava Durumu: " + jsonAntalya.weather[0].main);
-                $("#ikon").append("<img src='iconset/dark/" + jsonAntalya.weather[0].icon + ".png' />");
+                $("#ikon").append("<img src='https://www.antalyawebtasarim.com/destek/resimler/iconset/dark/" + jsonAntalya.weather[0].icon + ".png' />");
             });
         });
     </script>
