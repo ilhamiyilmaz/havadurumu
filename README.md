@@ -1,4 +1,4 @@
-# Hava Durumu with OpenWeatherMap API
+# OpenWeatherMap API ile Hava Durumu 
 
 OpenWeatherMap Web API aracılığıyla JSON Request oluşturarak hava durumu getirir.<br />
 HTTPS ile kullanabilmek için API'nın ücretli sürümünün kullanılması zorunludur.<br />
