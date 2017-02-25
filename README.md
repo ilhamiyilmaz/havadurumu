@@ -1,6 +1,6 @@
 # OpenWeatherMap API ile Hava Durumu 
 
-<img src="http://www.oldtusbatur.com/Resim/Kategori/Kucuk/Bodrum192aa97.jpg" />
+<img src="https://github.com/ilhamiyilmaz/havadurumu/blob/master/images/img1.jpg" />
 
 OpenWeatherMap Web API aracılığıyla JSON Request oluşturarak hava durumu getirir.<br />
 HTTPS ile kullanabilmek için API'nın ücretli sürümünün kullanılması zorunludur.<br />
